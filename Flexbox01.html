@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Flexbox : Properities </title>
+    
+
+    <style>
+        #box{
+            border: 2px solid black;
+            height: 700px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            flex-wrap:nowrap;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+            
+            /* Flex flow is a property where we can set two values together - 1. flex-direction 2. flex-wrap */
+            /* flex-flow: row wrap;   */
+            flex-flow: column nowrap;
+            flex-flow: row nowrap;
+            /* flex-flow: row nowrap; */
+
+            /* Let's Learn Justify Content */
+            justify-content: center;
+            justify-content: start;
+            justify-content: end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: left;
+            justify-content: right;
+            justify-content: start;
+            /* justify-content: center; */
+
+            /* Align Items */
+            /* align-items: center; */
+            /* align-items: start; */
+            
+            /* align content */
+            /* align-content: center; */
+        }
+
+        .item{
+            border: 2px solid brown;
+            width: 100px;
+            height: 100px;
+            margin: 4px;
+           
+            
+        }
+
+        #i1{
+            background-color: red;
+            /* order: 234; */
+            /* flex-shrink: 4; */
+            /* flex-grow: 5; */
+            /* flex-basis: 200px; */
+            /* align-self: center; */
+            /* align-self: end; */
+            /* align-self: self-end; */
+           
+        }
+        #i2{
+            background-color: blue;
+            /* order: 200; */
+            /* flex-grow: 3; */
+        }
+        #i3{
+            background-color: yellow;
+            /* order: 190; */
+        }
+        #i4{
+            background-color: greenyellow;
+            /* order: 1; */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="item" id="i1">Item 1</div>
+        <div class="item" id="i2">Item 2</div>
+        <div class="item" id="i3">Item 3</div>
+        <div class="item" id="i4">Item 4</div>
+    </div>
+</body>
+</html>
